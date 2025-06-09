@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.mo
+*.sqlite3
+db.sqlite3
+
+# Django migrations
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Ignore media and static files
+media/
+staticfiles/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Pipenv files
+Pipfile.lock
+
+# mypy
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# coverage reports
+htmlcov/
+.coverage
+
+# dotenv environment variables file
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
