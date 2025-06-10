@@ -1,0 +1,22 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-6 text-center">
+    <img src="{% static 'images/me.jpg' %}" alt="Sonu Kumar Profile Picture"
+         class="w-32 h-32 rounded-full shadow-lg mb-6 border-4 border-indigo-500 object-cover" />
+
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Hello, I’m <span class="text-indigo-600">Sonu Kumar</span> 👋</h1>
+    
+    <p class="mt-4 text-lg text-gray-600">
+        Full-stack Developer · Python + Django · React Enthusiast
+    </p>
+
+    <a href="{% url 'projects' %}"
+       class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg shadow hover:bg-indigo-700 transition duration-300">
+        See My Work
+    </a>
+</section>
+{% endblock %}
