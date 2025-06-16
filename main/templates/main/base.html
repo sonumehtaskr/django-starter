@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% load static %}
     <meta charset="UTF-8">
@@ -7,9 +8,20 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     {% include "main/components/navbar.html" %}
     <main>{% block content %}{% endblock %}</main>
     {% include "main/components/footer.html" %}
+    {% if messages %}
+    <div class="fixed top-4 right-4 z-50">
+        {% for message in messages %}
+        <div class="bg-green-100 text-green-800 px-4 py-2 rounded shadow mb-2">
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 </body>
+
 </html>
